@@ -1,0 +1,10 @@
+[Unit]
+Description=File export service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/ian/wormhole/start.sh
+
+[Install]
+WantedBy=multi-user.target
